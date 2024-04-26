@@ -24,7 +24,7 @@ public class ProductService {
 		int val =sc.nextInt();
 		
 		if(val>8) {
-			System.out.println("Invalid Value Please Enter the Value from 1 to 8 Based on your Work");
+			System.err.println("Invalid Value Please Enter the Value from 1 to 8 Based on your Work");
 		}
 
 		switch(val) {
@@ -115,7 +115,7 @@ public class ProductService {
 				String pBrand = rs.getString("productBrand");
 				int pPrice = rs.getInt("productPrice");
 
-				System.out.println("ID is :"+pid+" and Name is :"+pName+" and Brand "+pBrand+" Price is :"+pPrice);
+				System.out.println("ID is :"+pid+" and Name is :"+pName+" and Brand : "+pBrand+" Price is :"+pPrice);
 			}
 
 
@@ -147,7 +147,7 @@ public class ProductService {
 				String pBrand = rs.getString("productBrand");
 				int pPrice = rs.getInt("productPrice");
 
-				System.out.println("ID is :"+pid+" and Name is :"+pName+" and Brand "+pBrand+" Price is :"+pPrice);
+				System.out.println("ID is :"+pid+" and Name is :"+pName+" and Brand : "+pBrand+" Price is :"+pPrice);
 			}
 
 
@@ -183,7 +183,7 @@ public class ProductService {
 				String pBrand = rs.getString("productBrand");
 				int pPrice = rs.getInt("productPrice");
 
-				System.out.println("ID is :"+pid+" and Name is :"+pName+" and Brand "+pBrand+" Price is :"+pPrice);
+				System.out.println("ID is :"+pid+" and Name is :"+pName+" and Brand :"+pBrand+" Price is :"+pPrice);
 			}
 
 
@@ -214,7 +214,7 @@ public class ProductService {
 				String pBrand = rs.getString("productBrand");
 				int pPrice = rs.getInt("productPrice");
 
-				System.out.println("ID is :"+pid+" and Name is :"+pName+" and Brand "+pBrand+" Price is :"+pPrice);
+				System.out.println("ID is :"+pid+" and Name is :"+pName+" and Brand :"+pBrand+" Price is :"+pPrice);
 			}
 
 
@@ -327,7 +327,7 @@ final class DBSingleton{
 			Properties prop = new Properties();
 
 
-			FileReader read = new FileReader("Config/Product.property");
+			FileReader read = new FileReader("Config/Product.properties");
 			prop.load(read);
 			String username = prop.getProperty("UserName");
 			String pwd = prop.getProperty("Password");
